@@ -1,0 +1,20 @@
+/* reset styles */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+// base pour lea grille custom sass
+.wrapper {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+}

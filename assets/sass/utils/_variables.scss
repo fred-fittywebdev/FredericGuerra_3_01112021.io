@@ -1,0 +1,27 @@
+$purple: #9356dc;
+$pink: #ff79da;
+$green: #99e2d0;
+
+$color-primary: $purple;
+$color-secondary: $pink;
+$color-tertiary: $green;
+
+$color-sub1: rgb(235, 235, 235);
+$color-sub2: rgb(245, 245, 245);
+$color-sub3: rgb(50, 50, 50);
+
+//custom sass grid
+$grid-columns: 12;
+
+//grid gap
+$grid-gaps: (
+	'0': 0,
+	'1': 10px,
+	'2': 20px,
+	'3': 30px,
+);
+
+//justify-content values
+$justify-values: flex-start, flex-end, center, space-between, space-around;
+//align-items values
+$align-values: flex-start, flex-end, center, baseline;

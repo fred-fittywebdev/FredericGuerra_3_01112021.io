@@ -2,9 +2,12 @@
 @import './utils/variables';
 //Base
 @import './base/reset';
-
+//components
+@import './components/buttons';
 //layout
 @import './layout/breakpoints';
 @import './layout/grid';
+@import './layout/_header';
+@import './layout/top-section';
 
 //Pages

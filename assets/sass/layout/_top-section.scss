@@ -1,0 +1,62 @@
+.top-section {
+	.lieu {
+		background-color: #e7e7e7;
+	}
+
+	&__lieu {
+		background-color: #e7e7e7;
+
+		.fas {
+			padding-right: 15px;
+			font-size: map-get($map: $icons-size, $key: big);
+		}
+		p {
+			font-size: nth($list: $font-size, $n: 3);
+			font-weight: map-get($map: $font-weight, $key: medium);
+			margin: 1rem 0;
+		}
+	}
+
+	&__reservation {
+		background-color: #f6f6f6;
+		text-align: center;
+		padding-bottom: 35px;
+
+		h2 {
+			display: block;
+			padding-top: 50px;
+			font-size: nth($list: $font-size, $n: 4);
+			font-weight: map-get($map: $font-weight, $key: heavy);
+		}
+
+		p {
+			display: block;
+			font-size: nth($list: $font-size, $n: 3);
+			margin: 1rem 0;
+		}
+	}
+
+	&__fonctionnement {
+		h2 {
+			font-size: nth($list: $font-size, $n: 4);
+			font-weight: map-get($map: $font-weight, $key: heavy);
+			margin: 30px 0 30px 20px;
+		}
+
+		ul {
+			flex-direction: column;
+			margin-bottom: 35px;
+			background-color: $white;
+
+			li {
+				font-size: nth($list: $font-size, $n: 2);
+				list-style-type: none;
+				background-color: #f6f6f6;
+				border-radius: 25px;
+				height: 80px;
+				width: 85%;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}

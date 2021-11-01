@@ -1,0 +1,47 @@
+.btn {
+	font-size: nth($list: $font-size, $n: 2);
+	box-shadow: 0px 8px 8px 0px #cdcdcd;
+	font-weight: map-get($map: $font-weight, $key: light);
+	color: $white;
+	padding: 16px 24px;
+	border-radius: 50px;
+	border: none;
+	background: linear-gradient($color-primary, $color-secondary);
+
+	&:hover {
+		cursor: pointer;
+		background: linear-gradient(
+			350deg,
+			lighten($color-primary, 5),
+			lighten($color-secondary, 4)
+		);
+		box-shadow: 0px 4px 4px 2px #b3b3b3;
+	}
+}
+
+.btn-fonctionnement {
+	box-shadow: 0px 8px 8px 0px #cdcdcd;
+	&--num {
+		font-size: nth($list: $font-size, $n: 1);
+		color: white;
+		padding: 6px 10px;
+		margin-left: -14px;
+		background-color: $color-primary;
+		border-radius: 40px;
+	}
+	.fas {
+		font-size: map-get($map: $icons-size, $key: big);
+		color: gray;
+		padding: 0 25px;
+	}
+	strong {
+		font-size: nth($list: $font-size, $n: 2);
+	}
+	&:hover {
+		cursor: pointer;
+		background-color: darken(#f6f6f6, 7);
+		.fas {
+			color: $color-primary;
+		}
+	}
+}

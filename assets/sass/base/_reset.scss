@@ -5,12 +5,24 @@
 	box-sizing: border-box;
 }
 
+body {
+	font-family: $ff-body;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+}
+
 // base pour lea grille custom sass
 .wrapper {
 	width: 100%;
-	max-width: 1400px;
+	//max-width: 98%;
 	margin: 0 auto;
-	padding: 0 20px;
 	box-sizing: border-box;
 }
 

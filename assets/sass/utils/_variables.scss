@@ -1,3 +1,6 @@
+// ------ Variables | couleurs ------ //
+
+//Main colors
 $purple: #9356dc;
 $pink: #ff79da;
 $green: #99e2d0;
@@ -6,11 +9,41 @@ $color-primary: $purple;
 $color-secondary: $pink;
 $color-tertiary: $green;
 
+//secondary colors
+$black: #000;
+$white: #fff;
+
 $color-sub1: rgb(235, 235, 235);
 $color-sub2: rgb(245, 245, 245);
 $color-sub3: rgb(50, 50, 50);
 
-//custom sass grid
+// ------ Variables | listes typo ------ //
+$ff-sans: 'Roboto', sans-serif;
+$ff-display: 'Shrikhand', cursive;
+
+$ff-body: $ff-sans;
+$ff-headings: $ff-display;
+
+$font-weight: (
+	'heavy': 900,
+	'bold': 700,
+	'medium': 500,
+	'normal': 400,
+	'light': 300,
+	'thin': 100,
+);
+
+$font-size: 0.8rem 1rem 1.2rem 1.7rem 1.9rem; // font-size: nth($font-size, 4);
+
+$icons-size: (
+	'small': 1rem,
+	'normal': 1.3rem,
+	'big': 1.5rem,
+);
+
+// ------ Variables | Custom sass grid ------ //
+
+//custom grid column
 $grid-columns: 12;
 
 //grid gap

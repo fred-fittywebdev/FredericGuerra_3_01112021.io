@@ -48,7 +48,7 @@ a {
 .btn-fonctionnement {
   box-shadow: 0px 8px 8px 0px #cdcdcd;
 }
-.btn-fonctionnement--num {
+.btn-fonctionnement--numero {
   font-size: 0.8rem;
   color: white;
   padding: 6px 10px;
@@ -578,6 +578,18 @@ a {
   font-size: 1.2rem;
   margin: 1rem 0;
 }
+@media (min-width: 720px) {
+  .top-section__fonctionnement {
+    margin: auto;
+    max-width: 900px;
+  }
+}
+@media (min-width: 960px) {
+  .top-section__fonctionnement {
+    margin: auto;
+    max-width: 1200px;
+  }
+}
 .top-section__fonctionnement h2 {
   font-size: 1.7rem;
   font-weight: 900;
@@ -585,17 +597,48 @@ a {
 }
 .top-section__fonctionnement ul {
   flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 35px;
   background-color: #fff;
 }
+@media (min-width: 720px) {
+  .top-section__fonctionnement ul {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+@media (min-width: 960px) {
+  .top-section__fonctionnement ul {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
 .top-section__fonctionnement ul li {
   font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
   list-style-type: none;
   background-color: #f6f6f6;
   border-radius: 25px;
   height: 80px;
   width: 85%;
   margin-bottom: 30px;
+}
+@media (min-width: 720px) {
+  .top-section__fonctionnement ul li {
+    width: 35%;
+  }
+}
+@media (min-width: 960px) {
+  .top-section__fonctionnement ul li {
+    width: 28%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

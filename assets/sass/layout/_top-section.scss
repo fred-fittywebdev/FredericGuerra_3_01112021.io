@@ -37,6 +37,16 @@
 	}
 
 	&__fonctionnement {
+		@include md {
+			margin: auto;
+			max-width: 900px;
+		}
+
+		@include lg {
+			margin: auto;
+			max-width: 1200px;
+		}
+
 		h2 {
 			font-size: nth($list: $font-size, $n: 4);
 			font-weight: map-get($map: $font-weight, $key: heavy);
@@ -45,17 +55,44 @@
 
 		ul {
 			flex-direction: column;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			margin-bottom: 35px;
 			background-color: $white;
 
+			@include md {
+				flex-direction: row;
+				justify-content: space-around;
+				flex-wrap: wrap;
+				width: 100%;
+			}
+
+			@include lg {
+				flex-direction: row;
+				justify-content: space-around;
+				width: 100%;
+			}
+
 			li {
 				font-size: nth($list: $font-size, $n: 2);
+				display: flex;
+				align-items: center;
+				justify-content: left;
 				list-style-type: none;
 				background-color: #f6f6f6;
 				border-radius: 25px;
 				height: 80px;
 				width: 85%;
 				margin-bottom: 30px;
+
+				@include md {
+					width: 35%;
+				}
+
+				@include lg {
+					width: 28%;
+				}
 			}
 		}
 	}

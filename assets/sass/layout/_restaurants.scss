@@ -2,8 +2,14 @@
 	background-color: #ececec;
 	padding: 40px 0;
 
-	&_title {
-		font-size: nth($list: $font-size, $n: 2);
+	&__title {
+		font-size: nth($list: $font-size, $n: 4);
+		font-weight: map-get($map: $font-weight, $key: heavy);
 		margin: 30px 0 30px 20px;
+
+		@include xl {
+			max-width: 1200px;
+			margin: 30px auto;
+		}
 	}
 }

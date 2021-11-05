@@ -27,6 +27,7 @@
 			padding-top: 50px;
 			font-size: nth($list: $font-size, $n: 4);
 			font-weight: map-get($map: $font-weight, $key: heavy);
+			margin: 0;
 		}
 
 		p {
@@ -59,6 +60,7 @@
 			justify-content: center;
 			align-items: center;
 			margin-bottom: 35px;
+			padding: 0;
 			background-color: $white;
 
 			@include md {

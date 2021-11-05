@@ -1,12 +1,13 @@
 /* reset styles */
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
 body {
 	font-family: $ff-body;
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+	main {
+		margin: auto;
+		height: 100%;
+		position: relative;
+	}
 }
 
 ul {
@@ -29,11 +30,4 @@ a {
 .row {
 	display: flex;
 	flex-flow: row wrap;
-}
-
-.container {
-	width: 100%;
-	max-width: 1024px;
-	background-color: beige;
-	margin: auto;
 }

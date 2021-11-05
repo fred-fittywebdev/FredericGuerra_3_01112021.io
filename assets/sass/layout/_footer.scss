@@ -1,0 +1,51 @@
+footer {
+	background-color: #313131;
+}
+.footer {
+	display: flex;
+	flex-direction: column;
+	padding: 25px 30px 80px 30px;
+
+	@include md {
+		max-width: 1200px;
+		margin: auto;
+	}
+
+	&--title {
+		font-size: nth($list: $font-size, $n: 2);
+		margin-top: 0;
+		margin-bottom: 20px;
+		font-family: 'Shrikhand';
+		letter-spacing: 1px;
+		color: white;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		list-style-type: none;
+		padding-left: 0;
+		margin: 0;
+
+		@include md {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		li {
+			padding-bottom: 10px;
+			.fas {
+				width: 20px;
+				padding-right: 10px;
+			}
+		}
+		&--link {
+			text-decoration: none;
+			font-style: initial;
+			color: white;
+			&:hover {
+				color: $color-secondary;
+			}
+		}
+	}
+}

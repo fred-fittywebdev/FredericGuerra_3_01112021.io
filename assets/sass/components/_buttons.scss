@@ -45,3 +45,17 @@
 		}
 	}
 }
+
+.badge {
+	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	width: 80px;
+	background-color: $color-tertiary;
+	color: #008766;
+	position: absolute;
+	right: 10px;
+	top: 15px;
+}

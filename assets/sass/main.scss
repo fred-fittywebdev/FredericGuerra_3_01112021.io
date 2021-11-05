@@ -2,12 +2,16 @@
 @import './utils/variables';
 //Base
 @import './base/reset';
-//components
-@import './components/buttons';
-//layout
+
 @import './layout/breakpoints';
 @import './layout/grid';
+
+@import './components/buttons';
+
 @import './layout/_header';
 @import './layout/top-section';
+@import './layout/restaurants';
+@import './layout/footer';
 
-//Pages
+@import './components/card';
+@import './components/linksCards';

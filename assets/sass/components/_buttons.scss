@@ -59,3 +59,20 @@
 	right: 10px;
 	top: 15px;
 }
+
+.icon-heart {
+	color: black;
+	font-size: 24px;
+	height: 24px;
+	margin-top: 20px;
+	margin-right: 20px;
+	&:hover {
+		cursor: pointer;
+		animation: heart 1s ease-out;
+		background: linear-gradient(to top, $color-secondary, $color-primary);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: bold;
+		-webkit-animation: heart 2s ease-out;
+	}
+}

@@ -566,6 +566,14 @@ a {
     transform: scaleY(1);
   }
 }
+@keyframes underline {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .btn {
   font-size: 1rem;
   box-shadow: 0px 8px 8px 0px #cdcdcd;
@@ -653,6 +661,14 @@ a {
   display: block;
   box-shadow: 0 2px 5px 0 #b9b9b9;
   padding: 1.25rem;
+}
+.header__logo {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Shrikhand", cursive;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin: 0;
 }
 
 .top-section .lieu {
@@ -886,6 +902,88 @@ footer {
 .container li:hover {
   box-shadow: 0px 0px 4px 2px gray;
   transform: scale(1.01);
+}
+
+.page-restaurant {
+  width: 100%;
+}
+
+.restaurant-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 25px 10px 25px;
+}
+.restaurant-header .arrow {
+  font-size: 24px;
+  height: 26px;
+  width: 22px;
+}
+.restaurant-header .header__logo {
+  margin: auto;
+}
+
+.restaurant-img {
+  width: 100%;
+  margin: 0;
+}
+
+.img-restaurant {
+  max-height: 300px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.restaurant-menu {
+  border-radius: 30px 30px 0 0;
+  background-color: whitesmoke;
+}
+
+.restaurant {
+  margin-top: -60px;
+  position: relative;
+}
+
+.restaurant-name {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  align-items: center;
+}
+.restaurant-name__title {
+  font-family: "Shrikhand", cursive;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+.restaurant-name__like {
+  margin: 0;
+}
+
+.menu {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.menu--title {
+  margin: 0 0 0 34px;
+  font-weight: initial;
+  font-size: 1.2rem;
+}
+.menu--title::after {
+  content: "";
+  display: block;
+  width: 8%;
+  height: 3px;
+  background-color: #99e2d0;
+  animation: underline 2.3s;
+  animation-fill-mode: both;
+  transform: scale(0);
+  transform-origin: left;
+}
+.menu--title:hover::after {
+  width: 13%;
+  transition: all 1s ease;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,13 +2,21 @@
 @keyframes heart {
 	0% {
 		opacity: 0;
-		//transform: translateY(60%);
 		transform: scaleY(0);
 	}
 
 	100% {
 		opacity: 1;
 		transform: scaleY(1);
-		//ransform: translateY(0%);
+	}
+}
+
+//Animation ligne verte
+@keyframes underline {
+	0% {
+		transform: scaleX(0);
+	}
+	100% {
+		transform: scaleX(1);
 	}
 }

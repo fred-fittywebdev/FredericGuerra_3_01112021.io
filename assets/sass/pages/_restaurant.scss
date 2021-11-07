@@ -63,7 +63,7 @@
 		&::after {
 			content: '';
 			display: block;
-			width: 8%;
+			width: 50px;
 			height: 3px;
 			background-color: $color-tertiary;
 			animation: underline 2.3s;
@@ -73,7 +73,7 @@
 		}
 
 		&:hover::after {
-			width: 13%;
+			width: 65px;
 			transition: all 1s ease;
 		}
 	}

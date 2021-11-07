@@ -498,15 +498,72 @@ a {
     width: 100%;
   }
 }
+/* CSS for animated bouncing loader. */
+.loader {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  height: 100vh;
+  animation: loader 4s linear;
+  visibility: hidden;
+  /* Loader circles */
+}
+.loader > span {
+  background: #9356dc;
+  border-radius: 50%;
+  margin: 5rem 0.5rem;
+  animation: bouncingLoader 0.6s infinite alternate;
+}
+.loader > span:nth-child(2) {
+  background: #ff79da;
+  animation-delay: 0.2s;
+}
+.loader > span:nth-child(3) {
+  background: #99e2d0;
+  animation-delay: 0.4s;
+}
+
+@keyframes loader {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* Define the animation called bouncingLoader. */
+@keyframes bouncingLoader {
+  from {
+    width: 0.1rem;
+    height: 0.1rem;
+    opacity: 0.2;
+    transform: translate3d(0);
+  }
+  to {
+    width: 2rem;
+    height: 2rem;
+    opacity: 1;
+    transform: translate3d(0, -1rem, 0);
+  }
+}
 @keyframes heart {
   0% {
     opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
+    transform: scaleY(0);
   }
   100% {
     opacity: 1;
+    transform: scaleY(1);
   }
 }
 .btn {
@@ -567,20 +624,28 @@ a {
 }
 
 .icon-heart {
+  position: relative;
   color: black;
+  overflow: hidden;
   font-size: 24px;
   height: 24px;
   margin-top: 20px;
   margin-right: 20px;
 }
-.icon-heart:hover {
+.icon-heart:hover:after {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  height: 24px;
+  top: 0;
+  left: 0;
   cursor: pointer;
-  animation: heart 1s ease-out;
-  background: linear-gradient(to top, #ff79da, #9356dc);
+  transform: scaleY(0);
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  animation: heart 1s ease-out 0s normal forwards;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  -webkit-animation: heart 2s ease-out;
 }
 
 .header {

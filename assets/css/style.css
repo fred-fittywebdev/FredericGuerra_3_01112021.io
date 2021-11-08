@@ -566,6 +566,17 @@ a {
     transform: scaleY(1);
   }
 }
+@keyframes floating {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 @keyframes underline {
   0% {
     transform: scaleX(0);
@@ -590,44 +601,44 @@ a {
     opacity: 1;
   }
 }
-#case-1 {
-  animation-delay: 0.1s;
-}
-
-#case-2 {
+#plat-1 {
   animation-delay: 0.2s;
 }
 
-#case-3 {
-  animation-delay: 0.3s;
-}
-
-#case-4 {
+#plat-2 {
   animation-delay: 0.4s;
 }
 
-#case-5 {
-  animation-delay: 0.5s;
-}
-
-#case-6 {
+#plat-3 {
   animation-delay: 0.6s;
 }
 
-#case-7 {
-  animation-delay: 0.7s;
-}
-
-#case-8 {
+#plat-4 {
   animation-delay: 0.8s;
 }
 
-#case-9 {
-  animation-delay: 0.9s;
+#plat-5 {
+  animation-delay: 1s;
 }
 
-#case-10 {
-  animation-delay: 1s;
+#plat-6 {
+  animation-delay: 1.2s;
+}
+
+#plat-7 {
+  animation-delay: 1.4s;
+}
+
+#plat-8 {
+  animation-delay: 1.6s;
+}
+
+#plat-9 {
+  animation-delay: 1.8s;
+}
+
+#plat-10 {
+  animation-delay: 2s;
 }
 
 .btn {
@@ -973,6 +984,8 @@ footer {
   font-size: 24px;
   height: 26px;
   width: 22px;
+  transform: translateX(0);
+  animation: floating 3s ease-in-out infinite;
 }
 .restaurant-header .header__logo {
   margin: auto;
@@ -994,6 +1007,12 @@ footer {
   border-radius: 30px 30px 0 0;
   background-color: whitesmoke;
 }
+@media (min-width: 960px) {
+  .restaurant-menu {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
 
 .restaurant {
   margin-top: -60px;
@@ -1014,12 +1033,20 @@ footer {
 .restaurant-name__like {
   margin: 0;
 }
+@media (min-width: 960px) {
+  .restaurant-name {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
 
-.menu {
-  margin: auto;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+.menu__suggestion {
+  max-width: 1200px;
+}
+@media (min-width: 960px) {
+  .menu__suggestion {
+    margin: auto;
+  }
 }
 .menu--title {
   margin: 0 0 0 34px;
@@ -1110,7 +1137,7 @@ footer {
 }
 
 .appears-opacity {
-  animation: opacity 1s both;
+  animation: opacity 2s both;
 }
 
 .order {

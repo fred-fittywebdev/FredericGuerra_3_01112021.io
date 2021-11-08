@@ -11,6 +11,19 @@
 	}
 }
 
+//Animation flèche retour
+@keyframes floating {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(-10px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
 //Animation ligne verte
 @keyframes underline {
 	0% {
@@ -41,33 +54,33 @@
 	}
 }
 
-#case-1 {
-	animation-delay: 0.1s;
-}
-#case-2 {
+#plat-1 {
 	animation-delay: 0.2s;
 }
-#case-3 {
-	animation-delay: 0.3s;
-}
-#case-4 {
+#plat-2 {
 	animation-delay: 0.4s;
 }
-#case-5 {
-	animation-delay: 0.5s;
-}
-#case-6 {
+#plat-3 {
 	animation-delay: 0.6s;
 }
-#case-7 {
-	animation-delay: 0.7s;
-}
-#case-8 {
+#plat-4 {
 	animation-delay: 0.8s;
 }
-#case-9 {
-	animation-delay: 0.9s;
-}
-#case-10 {
+#plat-5 {
 	animation-delay: 1s;
+}
+#plat-6 {
+	animation-delay: 1.2s;
+}
+#plat-7 {
+	animation-delay: 1.4s;
+}
+#plat-8 {
+	animation-delay: 1.6s;
+}
+#plat-9 {
+	animation-delay: 1.8s;
+}
+#plat-10 {
+	animation-delay: 2s;
 }

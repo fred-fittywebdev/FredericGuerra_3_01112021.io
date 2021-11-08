@@ -9,6 +9,8 @@
 		font-size: 24px;
 		height: 26px;
 		width: 22px;
+		transform: translateX(0);
+		animation: floating 3s ease-in-out infinite;
 	}
 	.header__logo {
 		margin: auto;
@@ -29,6 +31,11 @@
 .restaurant-menu {
 	border-radius: 30px 30px 0 0;
 	background-color: $color-sub2;
+
+	@include lg {
+		max-width: 1200px;
+		margin: auto;
+	}
 }
 
 .restaurant {
@@ -49,13 +56,25 @@
 	&__like {
 		margin: 0;
 	}
+
+	@include lg {
+		max-width: 1024px;
+		margin: auto;
+	}
 }
 
 .menu {
-	margin: auto;
-	justify-content: center;
-	display: flex;
-	flex-direction: column;
+	&__suggestion {
+		max-width: 1200px;
+
+		@include lg {
+			margin: auto;
+		}
+	}
+	// margin: auto;
+	// justify-content: center;
+	// display: flex;
+	// flex-direction: column;
 	&--title {
 		margin: 0 0 0 34px;
 		font-weight: initial;
@@ -148,7 +167,7 @@
 	}
 }
 .appears-opacity {
-	animation: opacity 1s both;
+	animation: opacity 2s both;
 }
 
 //bouton 'commmander'

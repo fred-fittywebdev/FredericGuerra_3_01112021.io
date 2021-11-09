@@ -587,7 +587,7 @@ a {
     transform: scaleX(1);
   }
 }
-@keyframes rotate-center-check {
+@keyframes check {
   0% {
     transform: rotate(0);
   }
@@ -840,7 +840,7 @@ a {
 }
 
 .restaurants {
-  background-color: #ececec;
+  background-color: #f6f6f6;
   padding: 40px 0;
 }
 .restaurants__title {
@@ -955,7 +955,7 @@ footer {
   border-radius: 20px;
   margin-bottom: 20px;
   background-color: white;
-  box-shadow: 0px 0px 15px 5px #ebebeb;
+  box-shadow: 0px 0px 15px 5px #ececec;
   transition: transform 350ms;
   position: relative;
 }
@@ -1003,7 +1003,7 @@ footer {
 
 .restaurant-menu {
   border-radius: 30px 30px 0 0;
-  background-color: whitesmoke;
+  background-color: #f6f6f6;
 }
 @media (min-width: 960px) {
   .restaurant-menu {
@@ -1081,7 +1081,7 @@ footer {
   margin: 20px auto;
   width: 90%;
   height: 80px;
-  box-shadow: 0px 8px 8px 0px #ebebeb;
+  box-shadow: 0px 8px 8px 0px #ececec;
   overflow: hidden;
   cursor: pointer;
 }
@@ -1102,7 +1102,7 @@ footer {
   margin-right: 0;
 }
 .menu__plat:hover .check {
-  animation: rotate-center-check 0.5s ease-in-out;
+  animation: check 0.5s ease-in-out;
 }
 .menu__plat .check {
   color: white;

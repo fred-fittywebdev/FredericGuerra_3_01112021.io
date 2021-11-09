@@ -10,6 +10,7 @@
 			padding-right: 15px;
 			font-size: map-get($map: $icons-size, $key: big);
 		}
+
 		p {
 			font-size: nth($list: $font-size, $n: 3);
 			font-weight: map-get($map: $font-weight, $key: medium);

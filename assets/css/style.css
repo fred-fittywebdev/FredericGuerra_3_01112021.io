@@ -748,12 +748,19 @@ a {
 }
 .top-section__lieu .fas {
   padding-right: 15px;
+  padding-left: 20px;
   font-size: 1.5rem;
 }
-.top-section__lieu p {
+.top-section__lieu input {
+  margin: 1rem 0;
+  background-color: transparent;
+  border: none;
+  padding-top: 10px;
+}
+.top-section__lieu input::placeholder {
+  color: #000;
   font-size: 1.2rem;
   font-weight: 500;
-  margin: 1rem 0;
 }
 .top-section__reservation {
   background-color: #f6f6f6;

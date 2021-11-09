@@ -33,6 +33,10 @@
 		font-size: map-get($map: $icons-size, $key: big);
 		color: gray;
 		padding: 0 25px;
+
+		&.colored {
+			color: $color-primary;
+		}
 	}
 	strong {
 		font-size: nth($list: $font-size, $n: 2);

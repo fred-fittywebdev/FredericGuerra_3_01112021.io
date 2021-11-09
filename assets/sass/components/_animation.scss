@@ -1,4 +1,4 @@
-// Animation pour le remplissage du coeur "heart"
+// Animation pour le remplissage du coeur.
 @keyframes heart {
 	0% {
 		opacity: 0;
@@ -44,7 +44,7 @@
 	}
 }
 
-//Animation des suggestions du restaurant avec opacity
+//Animation apparitions des plats
 @keyframes opacity {
 	0% {
 		opacity: 0;

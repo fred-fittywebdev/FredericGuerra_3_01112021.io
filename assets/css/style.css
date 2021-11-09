@@ -498,7 +498,6 @@ a {
     width: 100%;
   }
 }
-/* CSS for animated bouncing loader. */
 .loader {
   width: 100%;
   background-color: #fff;
@@ -513,7 +512,6 @@ a {
   animation: loader 4s linear;
   visibility: hidden;
   pointer-events: none;
-  /* Loader circles */
 }
 .loader > span {
   background: #9356dc;
@@ -543,7 +541,6 @@ a {
     visibility: hidden;
   }
 }
-/* Define the animation called bouncingLoader. */
 @keyframes bouncingLoader {
   from {
     width: 0.1rem;

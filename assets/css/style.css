@@ -546,7 +546,7 @@ a {
     width: 0.1rem;
     height: 0.1rem;
     opacity: 0.2;
-    transform: translate3d(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
     width: 2rem;

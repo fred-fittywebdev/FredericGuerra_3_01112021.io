@@ -27,24 +27,20 @@
 		color: white;
 		padding: 6px 10px;
 		margin-left: -14px;
-		background-color: $color-primary;
+		background-color: #9356dc;
 		border-radius: 40px;
 	}
 	.fas {
 		font-size: map-get($map: $icons-size, $key: big);
 		color: gray;
 		padding: 0 25px;
-
-		&.colored {
-			color: $color-primary;
-		}
 	}
 	strong {
 		font-size: nth($list: $font-size, $n: 2);
 	}
 	&:hover {
 		cursor: pointer;
-		background-color: darken(#f6f6f6, 7);
+		background-color: #f5eddf;
 		.fas {
 			color: $color-primary;
 		}

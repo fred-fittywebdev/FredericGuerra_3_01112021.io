@@ -700,7 +700,6 @@ a {
 .icon-heart {
   position: relative;
   color: black;
-  overflow: hidden;
   font-size: 24px;
   height: 24px;
   margin-top: 20px;

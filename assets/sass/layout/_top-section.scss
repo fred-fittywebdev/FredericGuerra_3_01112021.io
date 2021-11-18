@@ -25,12 +25,6 @@
 				font-weight: map-get($map: $font-weight, $key: medium);
 			}
 		}
-
-		// p {
-		// 	font-size: nth($list: $font-size, $n: 3);
-		// 	font-weight: map-get($map: $font-weight, $key: medium);
-		// 	margin: 1rem 0;
-		// }
 	}
 
 	&__reservation {
